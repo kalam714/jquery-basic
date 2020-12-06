@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #slide ,#slideDetails {
+            padding: 10px;
+            background-color:blue;
+            border: solid 1px black;
+            text-align: center;
+            
+        }
+        #slideDetails{
+            padding: 60px;
+           /* display: none; */
+        }
+
+
+    </style>
+    <script src="jquery-3.5.1.js"></script>
+<script>
+$(function(){
+    $('#slide').click(function(){
+       // $('#slideDetails').slideDown(500)
+      // $('#slideDetails').slideUp(500)
+      $('#slideDetails').slideToggle(500)
+    })
+
+    
+});
+
+</script>
+</head>
+<body>
+    <div id="slide">View Slide</div>
+    <div id="slideDetails">Slide text goes here</div>
+
+
+
+</body>
+</html>

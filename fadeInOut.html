@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .fade {
+            width: 200px;
+            height: 150px;
+            background-color:red;
+          /*  display: none; uncomment it for fade in */
+          display: none /* for fade toggle*/
+        }
+
+
+    </style>
+    <script src="jquery-3.5.1.js"></script>
+<script>
+$(function(){
+    /* fade in
+    $('button').click(function(){
+        $('#1').fadeIn()
+        $('#2').fadeIn(1000)
+        $('#3').fadeIn(3000)
+        $('#4').fadeIn(4000)
+        $('#5').fadeIn(2000)
+    })
+*/
+/*  fade out
+$('button').click(function(){
+        $('#1').fadeOut()
+        $('#2').fadeOut(1000)
+        $('#3').fadeOut(3000)
+        $('#4').fadeOut(4000)
+        $('#5').fadeOut(2000)
+    })
+
+});
+*/
+
+/* toggle fade
+$('button').click(function(){
+        $('#1').fadeToggle()
+        $('#2').fadeToggle(1000)
+        $('#3').fadeToggle(3000)
+        $('#4').fadeToggle(4000)
+        $('#5').fadeToggle(2000)
+    })
+    */
+    $('button').click(function(){
+        $('#1').fadeTo(1000,.80)
+        $('#2').fadeTo(1000,.70)
+        $('#3').fadeTo(1000,.50)
+        $('#4').fadeTo(1000,.30)
+        $('#5').fadeTo(1000,.20)
+    })
+});
+
+</script>
+</head>
+<body>
+    <div id="1" class="fade"></div><br>
+    <div id="2" class="fade"></div><br>
+    <div id="3" class="fade"></div><br>
+    <div id="4" class="fade"></div><br>
+    <div id="5" class="fade"></div><br>
+<!--<button>Fade In</button> -->
+<!--<button>Fade Out</button> -->
+<!--<button>Fade Toggle</button> -->
+<button>Fade To</button>
+
+
+
+</body>
+</html>
