@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+<script src="jquery-3.5.1.js"></script>
+
+<script>
+$(function(){
+    /* get txt and html
+    $('#text').click(function(){
+        alert($('p').text())
+    })
+    $('#html').click(function(){
+        alert($('p').html())
+    })
+ */
+/*
+$('button').click(function(){
+    alert($('#name').val())
+})
+*/
+$('button').click(function(){
+    alert($('#link').attr('href'))
+})
+
+    
+});
+
+</script>
+</head>
+<body>
+    <!--
+   
+    <p>Hi theere, <strong>It's important</strong> <span>Topic</span></p>
+    <button id="text">Show Text</button>
+    <button id="html">Show Html</button>
+    -->
+    <!--
+    <p>
+        <input type="text" id="name" value="kalam Ahmed">
+        <button>Get Value</button>
+    </p>
+     -->
+     <p>
+        <a id="link" href="https://www.youtube.com/watch?v=v_KvGegak6s&list=RDT7iKDHj4INo&index=2"> E Jibon Tomake </a>
+        <button>Get Value</button>
+    </p>
+
+
+
+</body>
+</html>

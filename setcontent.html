@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="jquery-3.5.1.js"></script>
+
+<script>
+$(function(){
+    $('#text').click(function(){
+        $('#1').text('Text Reset')
+    })
+    $('#html').click(function(){
+        $('#2').html('<b>Html Reset</b>')
+    })
+    $('#value').click(function(){
+        $('#name').val('Nahid Rahman')
+    })
+    $('#link').click(function(){
+        $('#3').attr('href','https://www.youtube.com/watch?v=SjVQ-WR2q9I&list=RDT7iKDHj4INo&index=5')
+    })
+
+    
+});
+
+</script>
+</head>
+<body>
+  <p id="1">First text</p>
+  <p id="2">Second text</p>
+  <p><input type="text" id="name" value="kalam Ahmed"></p>
+  <a id="3" href="https://www.youtube.com/watch?v=6OAT4NBpy18&list=RDT7iKDHj4INo&index=4">Prithibir Joto Sukh</a>
+<button id="text">Reset Text</button>
+<button id="html">Reset Html</button>
+<button id="value">Reset Value</button>
+<button id="link">Change Link</button>
+
+</body>
+</html>

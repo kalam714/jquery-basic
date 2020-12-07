@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #square {
+            width: 200px;
+            height: 150px;
+            margin-top: 10px;
+            position: absolute;
+            background-color: black;
+        }
+        
+
+
+    </style>
+    <script src="jquery-3.5.1.js"></script>
+<script>
+$(function(){
+    $('button').click(function(){
+        $('#square').hide(500,function(){
+            alert('eliment hide')
+        })
+    })
+
+  
+
+    
+});
+
+</script>
+</head>
+<body>
+   
+    <button >Hide</button>
+    <div id="square"></div>
+    
+    
+
+
+
+</body>
+</html>

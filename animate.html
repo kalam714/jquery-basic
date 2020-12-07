@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #animate {
+            width: 200px;
+            height: 150px;
+            margin-top: 10px;
+            position: absolute;
+            background-color: black;
+        }
+        
+
+
+    </style>
+    <script src="jquery-3.5.1.js"></script>
+<script>
+$(function(){
+    //$('button').click(function(){
+      //  $('#animate').animate({left:'1000px'},1000) /animate
+     // $('#animate').animate({left:'1000px',opacity:.30,height:'toggle'},1000) /multiple params
+   //  $('#animate').animate({left:'1000px',opacity:.30,height:'+=200px',width:'+=250px'},1000) /relative values
+   /*
+   let animateFunction=$('#animate')
+   animateFunction.animate({height:'300px',opacity:.7},500)
+   animateFunction.animate({width:'400px',opacity:.9},1000)
+   animateFunction.animate({height:'500px',opacity:.8},1000)
+   animateFunction.animate({width:'600px',opacity:.7},500)
+   //animate-queue functionality
+    })
+    */
+    $('#start').click(function(){
+        $('#animate').animate({left:'500px'},2000)
+    })
+    $('#stop').click(function(){
+        $('#animate').stop()
+    })
+   
+
+    
+});
+
+</script>
+</head>
+<body>
+    <button id="start">Start...</button>
+    <button id="stop" >Stop</button>
+    <div id="animate"></div>
+    
+    
+
+
+
+</body>
+</html>
