@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .color{
+            color: blue;
+        }
+        .size{
+            font-size: xx-large;
+        }
+    </style>
+
+<script src="jquery-3.5.1.js"></script>
+
+<script>
+$(function(){
+    /*
+    $('button').click(function(){
+        $('p').addClass("size");
+
+        $('h5').addClass('color')
+    })
+   */
+  /*
+   $('button').click(function(){
+        $('p').removeClass("size");
+
+        $('h5').removeClass('color')
+   })
+   */
+   $('button').click(function(){
+        $('p').toggleClass("size");
+
+        $('h5').toggleClass('color')
+   })
+});
+
+</script>
+</head>
+<body>
+    <!--
+    <p>Hi there</p>
+    <h5>It's done</h5>
+    
+    <button>Add Class</button>
+-->
+<p class="size">Hi there</p>
+<h5 class="color">It's done</h5>
+
+<!--<button>Reomve Class</button>-->
+<button>Toggle class</button>
+
+</body>
+</html>

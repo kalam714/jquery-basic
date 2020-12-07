@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="jquery-3.5.1.js"></script>
+
+<script>
+$(function(){
+    $('#1').click(function(){
+        // $('p').append('<b>Text added</b> ')
+       // $('p').prepend('<b>Text added</b> ')
+      // $('p').after('<b>Text added</b> ')
+     // $('p').before('<b>Text added</b> ')
+    })
+    $('#2').click(function(){
+     //   $('ol').append('<li>Item added</li> ')
+     //$('ol').prepend('<li>Item added</li> ')
+    // $('ol').after('<li>Item added</li> ')
+    })
+$('#remove').click(function(){
+  //  $('ol').remove()
+  //  $('ol').empty()
+  $('p').remove('.1,.2') //remove multiple
+
+})
+    
+});
+
+</script>
+</head>
+<body>
+ <p>Text goes here ...</p>
+ <p class="1"><b>Remove paragrap</b></p>
+ <p class="2"><b>Remove paragrap</b></p>
+
+ <ol>
+     <li>Facebook</li>
+     <li>Twitter</li>
+     <li>Lindin</li>
+ </ol>
+ <button id="1">Add Text</button>
+ <button id="2">Add item</button>
+ <button id="remove">Remove</button>
+
+</body>
+</html>
